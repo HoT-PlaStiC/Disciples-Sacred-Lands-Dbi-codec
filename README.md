@@ -1,4 +1,4 @@
-# Disciples-Sacred-Lands-Dbi-codec
+# Disciples-Sacred-Lands-Dbi-codec-decoder-encoder
 Decoding and Encoding in Disciples Sacred Lands
 
 With this script its possible to replace portraits with new images in Disciples Sacred Lands. 
