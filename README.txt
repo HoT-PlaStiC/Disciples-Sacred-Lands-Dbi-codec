@@ -28,12 +28,12 @@ enter
 			type: python fd_portrait_codec_v2_36.py list any.DBI
 
 	2., decode images from any.DBI:
-			type: python fd_portrait_codec_v2_36.py decode any.DBI portrék\ 
+			type: python fd_portrait_codec_v2_36.py decode any.DBI portraits\ 
 
 		decode all images from all .DBI in the folder:
 			type: python fd_portrait_codec_v2_36.py decodeall
 
-	(you can change the folder name (portrék\) also you can change any.DBI
+	(you can change the folder name (portraits\) also you can change any.DBI
 	to any_mod.DBI if you would like to decode the encoded images)
 
 
@@ -45,6 +45,8 @@ enter
 	Images should be 55x67 or 115x67 scaled and in PNG format while encoding into UNIT.DBI)
 	(if you encode a new image it will automatically generate a new slot and code for it in case of UNIT.DBI
 	(starting with GP001S00) this case no need to add name at the end of the command)
+	You can use "ow" flag in the end of the command, in order to overwrite the original .DBI file!
+			type: python fd_portrait_codec_v2_36.py encode CFDW0048.png UNIT.DBI ow
 
 		In case of other.DBI:
 			type: python fd_portrait_codec_v2_36.py encode CFDW0048.png any.DBI FD050S00
@@ -53,14 +55,18 @@ enter
 	and the name determines which layer category it belongs, so you should use the encoded image
 	with the correct naming!)
 
+	You can use "ow" flag in the end of the command, in order to overwrite the original .DBI file!
+			type: python fd_portrait_codec_v2_36.py encode CFDW0048.png any.DBI FD050S00 ow
 
 	4., replace images:
-	python fd_portrait_codec_v2_36.py replace CFDW0048.png UNIT.DBI FD026S00
+			type: python fd_portrait_codec_v2_36.py replace CFDW0048.png any.DBI FD026S00
 
 	(you can write your custom images here (CFDW0048.png is a sample image)
 	Images should be 55x67 or 115x67 scaled and in PNG format while handling UNIT.DBI)
 	(you can choose which original portrait you would like to replace (FD026S00 for example)
 
+	You can use "ow" flag in the end of the command, in order to overwrite the original .DBI file!
+			type: python fd_portrait_codec_v2_36.py replace CFDW0048.png any.DBI FD026S00 ow
 
 	After you encode, the script will generate an any_mod.DBI file, which you can copy
 	and paste into Disciples Sacred Lands Imgs1, Imgs2 or Interf directory, and rename it to any.DBI 
